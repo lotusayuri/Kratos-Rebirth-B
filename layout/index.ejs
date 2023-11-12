@@ -1,6 +1,6 @@
 <!-- Breadcrumb for tag & category page -->
 <% if (page.tag || page.category) { %>
-    <article class="kratos-hentry kratos-entry-border-new clearfix">
+    <article class="kratos-hentry kratos-entry-border-new clearfix animate__animated animate__zoomIn">
         <div class="kratos-breadcrumb">
             <a href="<%- url_for('/') %>">
                 <i class="fa fa-home"></i>
@@ -64,7 +64,7 @@
         }
     } %>
     <% if (!post.title || post.link) { %>
-        <article class="kratos-hentry kratos-entry-border-new clearfix" itemscope itemtype="https://schema.org/Article">
+        <article class="kratos-hentry kratos-entry-border-new clearfix animate__animated animate__zoomIn" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-status">
                 <% if (post.link) { %>
                     <i class="fa fa-link"></i>
@@ -130,7 +130,7 @@
             <% } %>
         </article>
     <% } else if (theme.index && theme.index.post_type) { %>
-        <article itemscope itemtype="https://schema.org/Article">
+        <article class="animate__animated animate__zoomIn" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-hentry kratos-post-inner clearfix index-post">
                 <% if (post.pic) { %>
                 <div class="kratos-entry-thumb-new">
@@ -209,7 +209,7 @@
             </div>
         </article>
     <% } else { %>
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+        <article class="kratos-hentry clearfix animate__animated animate__zoomIn" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 <% if (post.sticky || post.top) { %>
                     <div class="pin-top wrapper">

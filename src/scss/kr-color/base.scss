@@ -271,6 +271,13 @@ span.blur {
   }
 }
 
+:root {
+    --gentle-wave1: rgba(24, 28, 39, 0.7);
+    --gentle-wave2: rgba(24, 28, 39, 0.5);
+    --gentle-wave3: rgba(24, 28, 39, 0.3);
+    --gentle-wave: rgb(24, 28, 39);
+  }
+
 /******************* Plugins ********************/
 
 #dsqjs {

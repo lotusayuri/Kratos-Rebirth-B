@@ -85,9 +85,10 @@ window.copyCode = window.copyCode || function(triggerBtn, targetCodeID) {
         $clone.attr({
             'id':'offcanvas-menu'
         });
-        $clone.find('> ul').attr({
+        $clone.filter('> ul').attr({
+            'class':'ul-me',
             'id':''
-        }).addClass('ul-me');
+        });
         $('#kratos-page').prepend($clone);
         $('.js-kratos-nav-toggle').on('click',()=>{
             if($('.nav-toggle').hasClass('toon')){

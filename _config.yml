@@ -1,12 +1,13 @@
 # Global 全局配置
 site_analytics: ''
-hoster: <a href="https://github.io" target="_blank">Github Pages</a>
+hoster: <a href="https://pages.cloudflare.com" target="_blank">Cloudflare Pages</a>
 site_logo: ''
 snow: false
 click_animate_js: 'candy'
 enable_dark: true
-highlight_theme: night-eighties # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
-check_update: true
+highlight_theme: light # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
+check_update: false
+Instantpage: true # 悬浮预加载链接
 # canonical: true
 
 vendors:
@@ -47,8 +48,8 @@ vendors:
 # 自定义样式
 customStyles:
   images: # 图片相关设置
-    # banner: /images/banner.webp # 站点横幅
-    # background: /images/bg.webp # 站点背景
+    banner: /images/banner-B.webp # 站点横幅
+    background: /images/bg-B.webp # 站点背景
 
 # Index 首页配置
 index:
@@ -184,7 +185,7 @@ widgets:
 - category
 - tagcloud
 - posts
-avatarUri: /images/avatar.webp
+avatarUri: /images/avatar2.webp
 mobile_toc: 
   hide: false
   hide_id: false
@@ -204,9 +205,9 @@ search:
 jsconfig:
   main:
     cover:
-      randomAmount: 20 # 表示从1~20
-      baseUrl: null # 使用默认值（不单独配置），将跟随 vendors 中的相关设定选择是否使用 cdn
-      filenameTemplate: "thumb_{no}.webp" 
+      randomAmount: 9 # 表示从1~9
+      baseUrl: "/images/thumb/" # 使用默认值（不单独配置），将跟随 vendors 中的相关设定选择是否使用 cdn
+      filenameTemplate: "thumb_B{no}.webp" 
     createTime: "2018/05/06 17:03:12"
     donateBtn: "支持我~"
     scanNotice: "扫一扫，好不好？"

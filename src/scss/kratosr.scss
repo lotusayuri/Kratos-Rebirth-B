@@ -1027,12 +1027,13 @@ table {
   }
 }
 
-.sf-menu {
+#kratos-primary-menu {
   li {
     position: relative;
-    i {
-      margin-right: .5em;
-    }
+  }
+
+  &.sf-menu li i {
+    margin-right: .5em;
   }
 }
 

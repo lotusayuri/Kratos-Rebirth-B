@@ -117,7 +117,7 @@ $(function () {
 
             scrollToMainTop();
             NProgress.start();
-
+            bubbleNoticer("请求页面中","normal","3000");
             window.dispatchEvent(pjaxEvents.before);
         }
         const onError = () => {
@@ -126,13 +126,13 @@ $(function () {
         }
         const onComplete = (responseText) => {
             window.dispatchEvent(pjaxEvents.success);
-
             const newDoc = document.implementation.createHTMLDocument("pjax");
             newDoc.documentElement.innerHTML = responseText;
             const isSuccessRequest = !!newDoc.getElementById("main");
             if (isSuccessRequest) {
                 history.replaceState(getPageData(location.href, document), document.title, location.href);
                 const data = getPageData(reqUrl, newDoc)
+                bubbleNoticer("请求成功","ok","3000");
                 if (needPushState) {
                     window.history.pushState(data, data.title, data.url);
                 }
@@ -144,9 +144,10 @@ $(function () {
                     $("body,html").animate({ scrollTop: $(reqId[0]).offset().top - 40 }, 600);
                 }
             } else {
+                bubbleNoticer("似乎超时了，准备三秒后新建页面","problem","3000");
                 // 其实是失败的
                 // 不如打开一个新页面？
-                window.open(reqUrl);
+                setTimeout(()=>{window.open(reqUrl);},3500)
             }
             NProgress.done();
             window.dispatchEvent(pjaxEvents.complete);
@@ -155,6 +156,7 @@ $(function () {
         request.onerror = function (e) {
             console.error(e);
             onError();
+            bubbleNoticer("请求出错啦","err","3000");
         };
         request.ontimeout = function () {
             onError();
