@@ -1,186 +1,183 @@
 // custom scss
 
 /************************************** color/blur ***************************************/
-@media(min-width: 768px) {
-	#kratos-widget-area {
-		.widget {
-			border-radius: 5px;
-			background-color: rgba(255, 255, 255, 0.8);
-			backdrop-filter: blur(6px);
-		}
-	}
-	.kratos-hentry {
-		border-radius: 5px;
-		background-color: rgba(255, 255, 255, 0.8);
-		backdrop-filter: blur(6px);
-	}
-	.navigation {
-		div {
-			border-radius: 5px;
-			background-color: rgba(255, 255, 255, 0.8);
-			backdrop-filter: blur(6px);
-		}
-	}
-	.pagination {
-		>li {
-			>a {
-				border-radius: 5px;
-				background-color: rgba(255, 255, 255, 0.8);
-				backdrop-filter: blur(6px);
-			}
-		}
-	}
-	.kr-tool {
-		.box {
-			background-color: rgb(132 132 132 / 70%);
-			backdrop-filter: blur(6px);
-			opacity: 1;
-		}
-	}
-	#kratos-desktop-topnav {
-		backdrop-filter: blur(6px);
-	}
-  }
+@media (min-width: 768px) {
+    #kratos-widget-area {
+        .widget {
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(6px);
+        }
+    }
+    .kratos-hentry {
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(6px);
+    }
+    .navigation {
+        div {
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(6px);
+        }
+    }
+    .pagination {
+        > li {
+            > a {
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(6px);
+            }
+        }
+    }
+    .kr-tool {
+        .box {
+            background-color: rgb(132 132 132 / 70%);
+            backdrop-filter: blur(6px);
+            opacity: 1;
+        }
+    }
+    #kratos-desktop-topnav {
+        backdrop-filter: blur(6px);
+    }
+}
 
 /************************************** waves ***************************************/
 :root {
-  --gentle-wave1: rgba(245, 245, 245, 0.7);
-  --gentle-wave2: rgba(245, 245, 245, 0.5);
-  --gentle-wave3: rgba(245, 245, 245, 0.3);
-  --gentle-wave: rgb(245, 245, 245);
+    --gentle-wave1: rgba(245, 245, 245, 0.7);
+    --gentle-wave2: rgba(245, 245, 245, 0.5);
+    --gentle-wave3: rgba(245, 245, 245, 0.3);
+    --gentle-wave: rgb(245, 245, 245);
 }
 .preview-overlay {
-  width: 100%;
-  position: relative;
-  left: 0;
-  right: 0;
-  z-index: 0;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 0;
 }
 .preview-overlay .preview-waves {
-  position: relative;
-  width: 100%;
-  height: 1vh;
-  margin-bottom: -10px;
-  min-height: 100px;
-  max-height: 150px;
+    position: relative;
+    width: 100%;
+    height: 1vh;
+    min-height: 101px;
+    max-height: 150px;
 }
 @media (max-width: 768px) {
-  .preview-overlay .preview-waves {
-    height: 40px;
-    min-height: 40px;
-  }
+    .preview-overlay {
+        display: none;
+    }
 }
 .preview-overlay .preview-parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 .preview-overlay .preview-parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
+    animation-delay: -2s;
+    animation-duration: 7s;
 }
 .preview-overlay .preview-parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
+    animation-delay: -3s;
+    animation-duration: 10s;
 }
 .preview-overlay .preview-parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
+    animation-delay: -4s;
+    animation-duration: 13s;
 }
 .preview-overlay .preview-parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
+    animation-delay: -5s;
+    animation-duration: 20s;
 }
 @-moz-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
 @-webkit-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
 @-o-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
 @keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
 }
 #banner {
-  overflow: hidden;
-  width: 110%;
-  height: 110%;
-  right: 5%;
+    overflow: hidden;
+    width: 110%;
+    height: 110%;
+    right: 5%;
 }
 .kratos-cover.kratos-hero-2 {
-	height: 300px;
+    height: 300px;
 }
 .kratos-start.kratos-hero-2 {
-	height: 300px;
+    height: 300px;
 }
 .kratos-cover.kratos-cover-2 {
-	height: 400px;
+    height: 400px;
 }
 
 /************************************** shadow ***************************************/
 #kratos-widget-area .widget {
-  box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .post-navigation {
-	.nav-previous {
-		box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
-	}
-	.nav-next {
-		box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
-	}
+    .nav-previous {
+        box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+    .nav-next {
+        box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 .kr-tool {
-	.box {
-		box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
-	}
+    .box {
+        box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    }
 }
 .kratos-hentry {
-	box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /************************************** border radius ***************************************/
 #kratos-widget-area {
-	.widget.widget-kratos-about {
-		.photo-background {
-			border-radius: 5px 5px 0 0;
-		}
-	}
+    .widget.widget-kratos-about {
+        .photo-background {
+            border-radius: 5px 5px 0 0;
+        }
+    }
 }
 .kratos-entry-border-new {
-	.kratos-post-meta-new {
-		border-radius: 0 0 5px 5px;
-	}
+    .kratos-post-meta-new {
+        border-radius: 0 0 5px 5px;
+    }
 }
 .post-comments {
-	box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
 
 /************************************** thumb fit ***************************************/
 .kratos-entry-thumb-new {
-	img {
-		object-fit: contain;
-	}
+    img {
+        object-fit: contain;
+    }
 }
 
 /************************************** animation ***************************************/
@@ -203,127 +200,126 @@
 
 /************************************** content title style ***************************************/
 article {
-	.kratos-entry-header {
-		+ {
-			.kratos-post-content {
-				h1 {
-					padding-bottom: 20px;
-					transition: all 0.3s ease-in-out;
-					border-bottom: 1px solid #51aded;
-					&:before {
-						font: normal normal normal 100% FontAwesome;
-						margin-right: 10px;
-						color: #51aded;
-						content: "\f0c1";
-						line-height: 1;
-					}
-					&:hover {
-						color: #51aded;
-					}
-				}
-				h2 {
-					padding-bottom: 20px;
-					transition: all 0.3s ease-in-out;
-					border-bottom: 1px solid #51aded;
-					&:before {
-						font: normal normal normal 100% FontAwesome;
-						margin-right: 10px;
-						color: #51aded;
-						content: "\f0c1";
-						line-height: 1;
-					}
-					&:hover {
-						color: #51aded;
-					}
-				}
-				h3 {
-					padding-bottom: 20px;
-					transition: all 0.3s ease-in-out;
-					&:before {
-						font: normal normal normal 100% FontAwesome;
-						margin-right: 10px;
-						color: #51aded;
-						content: "\f044";
-						line-height: 1;
-					}
-					&:hover {
-						color: #51aded;
-					}
-				}
-				h4 {
-					padding-bottom: 20px;
-					transition: all 0.3s ease-in-out;
-					&:hover {
-						color: #51aded;
-					}
-				}
-				h5 {
-					padding-bottom: 20px;
-					transition: all 0.3s ease-in-out;
-					&:hover {
-						color: #51aded;
-					}
-				}
-				h6 {
-					padding-bottom: 20px;
-					transition: all 0.3s ease-in-out;
-					&:hover {
-						color: #51aded;
-					}
-				}
-			}
-		}
-	}
+    .kratos-entry-header {
+        + {
+            .kratos-post-content {
+                h1 {
+                    padding-bottom: 20px;
+                    transition: all 0.3s ease-in-out;
+                    border-bottom: 1px solid #51aded;
+                    &:before {
+                        font: normal normal normal 100% FontAwesome;
+                        margin-right: 10px;
+                        color: #51aded;
+                        content: "\f0c1";
+                        line-height: 1;
+                    }
+                    &:hover {
+                        color: #51aded;
+                    }
+                }
+                h2 {
+                    padding-bottom: 20px;
+                    transition: all 0.3s ease-in-out;
+                    border-bottom: 1px solid #51aded;
+                    &:before {
+                        font: normal normal normal 100% FontAwesome;
+                        margin-right: 10px;
+                        color: #51aded;
+                        content: "\f0c1";
+                        line-height: 1;
+                    }
+                    &:hover {
+                        color: #51aded;
+                    }
+                }
+                h3 {
+                    padding-bottom: 20px;
+                    transition: all 0.3s ease-in-out;
+                    &:before {
+                        font: normal normal normal 100% FontAwesome;
+                        margin-right: 10px;
+                        color: #51aded;
+                        content: "\f044";
+                        line-height: 1;
+                    }
+                    &:hover {
+                        color: #51aded;
+                    }
+                }
+                h4 {
+                    padding-bottom: 20px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: #51aded;
+                    }
+                }
+                h5 {
+                    padding-bottom: 20px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: #51aded;
+                    }
+                }
+                h6 {
+                    padding-bottom: 20px;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        color: #51aded;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /************************************** sharing button color ***************************************/
 .kratos-entry-footer {
-	.post-like-donate {
-		.share {
-			border-color: #51aded;
-			color: #51aded;
-			&:hover {
-				background-color: #51aded;
-			}
-		}
-	}
+    .post-like-donate {
+        .share {
+            border-color: #51aded;
+            color: #51aded;
+            &:hover {
+                background-color: #51aded;
+            }
+        }
+    }
 }
 
 /************************************** footer background ***************************************/
 #footer {
-	background-image: linear-gradient(#24384b,#23282d);
+    background-image: linear-gradient(#24384b, #23282d);
 }
 
 /************************************** bubble Noticer ***************************************/
 @keyframes slideInRight {
-	from {
-		right: -230px;
-	}
-	to {
-		right: 0;
-	}
+    from {
+        right: -230px;
+    }
+    to {
+        right: 0;
+    }
 }
 .bubbleNoticer {
-	color: #666;
-	font-weight: bold;
-	position: fixed;
-	right: 0;
-	padding: 10px;
-	width: 150px;
-	min-height: 15px;
-	line-height: 15px;
-	font-size: 15px;
-	z-index: 1;
-	opacity: 0.8;
-	border-top-left-radius: 20px;
+    color: #666;
+    font-weight: bold;
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    width: 150px;
+    min-height: 15px;
+    line-height: 15px;
+    font-size: 15px;
+    z-index: 1;
+    opacity: 0.8;
+    border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-	animation-duration: 0.5s;
-	animation-name: slideInRight;
-	transition: top .5s;
-	word-break: break-all;
-	&::before {
-		font: 100%/1 FontAwesome;
-		margin-right: 10px;
-	}
+    animation-duration: 0.5s;
+    animation-name: slideInRight;
+    transition: top 0.5s;
+    word-break: break-all;
+    &::before {
+        font: 100%/1 FontAwesome;
+        margin-right: 10px;
+    }
 }
-	
