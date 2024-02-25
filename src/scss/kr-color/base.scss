@@ -277,6 +277,16 @@ span.blur {
     --gentle-wave3: rgba(24, 28, 39, 0.3);
     --gentle-wave: rgb(24, 28, 39);
   }
+#search-input {
+    background-color: $search_background;
+    color: $search_text;
+
+    &:active, &:focus {
+      border-color: $search_border;
+      box-shadow: $search_shadow;
+    }
+
+}
 
 /******************* Plugins ********************/
 
